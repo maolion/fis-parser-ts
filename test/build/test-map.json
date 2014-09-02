@@ -1,0 +1,32 @@
+{
+    "res": {
+        "test:client/a.ts": {
+            "uri": "/client/a.js",
+            "type": "js",
+            "deps": [
+                "test:client/b.ts"
+            ]
+        },
+        "test:client/b.ts": {
+            "uri": "/client/b.js",
+            "type": "js"
+        },
+        "test:client/x.d.ts": {
+            "uri": "/client/x.d.js",
+            "type": "js"
+        },
+        "test:server/a.ts": {
+            "uri": "/server/a.js",
+            "type": "js"
+        },
+        "test:server/b.ts": {
+            "uri": "/server/b.js",
+            "type": "js"
+        },
+        "test:server/x.d.ts": {
+            "uri": "/server/x.d.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

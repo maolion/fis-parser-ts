@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "author": "maolion",
+  "email" : "maolion.j@gmail.com",
+  "license": "MIT",
+  "name": "fis-parser-ts",
+  "description": "fis typescript compile plugin",
+  "keywords": [
+	"fis",
+	"fis-parser-typescript",
+	"fis typescript",
+	"fis parser",
+	"fis-parser",
+    "TypeScript",
+    "ts",
+    "tsc"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "http://maolion.com",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/maolion/fis-parser-ts"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "fis" : "1.7.8",
+	"typescript-compile" : "0.0.2",
+    "typescript": "1.0.1.0"
+  }
+}
