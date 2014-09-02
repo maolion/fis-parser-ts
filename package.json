@@ -1,16 +1,18 @@
 {
-  "version": "0.0.1",
-  "author": "maolion",
-  "email" : "maolion.j@gmail.com",
+  "version": "0.0.2",
+  "author": {
+    "name": "maolion"
+  },
+  "email": "maolion.j@gmail.com",
   "license": "MIT",
   "name": "fis-parser-ts",
   "description": "fis typescript compile plugin",
   "keywords": [
-	"fis",
-	"fis-parser-typescript",
-	"fis typescript",
-	"fis parser",
-	"fis-parser",
+    "fis",
+    "fis-parser-typescript",
+    "fis typescript",
+    "fis parser",
+    "fis-parser",
     "TypeScript",
     "ts",
     "tsc"
@@ -20,16 +22,23 @@
   },
   "homepage": "http://maolion.com",
   "repository": {
-	"type": "git",
-	"url": "https://github.com/maolion/fis-parser-ts"
+    "type": "git",
+    "url": "https://github.com/maolion/fis-parser-ts"
   },
   "engines": {
     "node": "0.10.x"
   },
   "main": "./index.js",
   "dependencies": {
-    "fis" : "1.7.8",
-	"typescript-compile" : "0.0.2",
-    "typescript": "1.0.1.0"
-  }
+    "fis": "1.7.8",
+    "typescript-compile": "0.0.3",
+    "typescript": "1.0.1"
+  },
+  "readme": "\r\n# fis-parser-ts\r\n\r\n用于 fis 工具的 typescript源文件编译插件\r\n\r\n## 安装\r\n\t\r\n\tnpm install fis-parser-ts\r\n\r\n## 使用\n\n\t//fis-conf.js\n\t//设置.ts源文件的解析器为ts\n\tfis.config.set(\"modules.parser.ts\", \"ts\");\n\n\t//全局配置\n\tfis.config.set('settings.parser.ts.compileSetting', {\n\t\tmodule             : \"commonjs\"// Specify module code generation: 'commonjs' or 'amd'\r\n        //, target         : \"ES3\"     // Specify ECMAScript target version: 'ES3' (default), or 'ES5'\r\n        //, noImplicitAny  : true      // Warn on expressions and declarations with an implied 'any' type.\r\n        //, removeComments : false     // Do not emit comments to output.\r\n        //, noLib          : false     // Do not include default library\r\n        //, root           : 'xxx'     // Source file root\r\n        //, file           : 'xxx.ts'  // Source file path\r\n        //, nodejs         : true      // Is node.js source file\n\t});\n\n\t//设置 .ts源文件的扩展为 .js\n\tfis.config.set('roadmap.ext.ts', 'js');\n\n\tfis.config.set('roadmap.ext.ts', 'js');\n\n\t//为某些文件提供 特殊的编译配置\n\tfis.config.set('roadmap.path').push({\n\t\t{\r\n            reg: \"server/**.ts\",\r\n            isMod: false,\r\n            useStandard: false,\r\n            compileSetting: {\r\n                nodejs             : true      // Is node.js source file\r\n                //, target         : \"ES3\"     // Specify ECMAScript target version: 'ES3' (default), or 'ES5'\r\n                //, noImplicitAny  : true      // Warn on expressions and declarations with an implied 'any' type.\r\n                //, removeComments : false     // Do not emit comments to output.\r\n                //, noLib          : false     // Do not include default library\r\n                //, root           : 'xxx'     // Source file root\r\n                //, file           : 'xxx.ts'  // Source file path\r\n            }\r\n        }\n\t});",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/maolion/fis-parser-ts/issues"
+  },
+  "_id": "fis-parser-ts@0.0.2",
+  "_from": "fis-parser-ts@"
 }
