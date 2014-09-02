@@ -52,18 +52,19 @@ fis.config.merge({
                 }
             },
             {
+                reg: "client/**.d.ts",
+                isMod: false,
+                useStandard: false
+            },
+            {
                 reg: "client/**.ts",
                 isMod: true,
 
                 compileSetting: {
                     module : "commonjs",
                 }
-            },
-            {
-                reg: "client/**.d.ts",
-                isMod: false,
-                useStandard: false
             }
+            
         ]
     },
     pack : {

@@ -27,8 +27,8 @@
 
 	//设置 .ts源文件的扩展为 .js
 	fis.config.set('roadmap.ext.ts', 'js');
-
-	fis.config.set('roadmap.ext.ts', 'js');
+	//注: 像 xxx.d.ts的文件不会被直接编译，发布出的内容也是与源文件中的内容一至。文件扩展名不会被改变到 "roadmap.ext.ts" 指定的
+	
 
 	//为某些文件提供 特殊的编译配置
 	fis.config.set('roadmap.path').push({
